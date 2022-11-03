@@ -10,13 +10,13 @@ Do
 
     Do
 
-        Print "............................POGODI MOJ BROJ..................................."
+        Print "............................POGODI MOJ BROJ..................................."
         Print "IZABERI TEZINU"
         Print
         Print "A)LAKO"
         Print "B)NORMALNO"
         Print "C)TESKO"
-        Input "UNESITE ZELJENU TEZINU: ", GAME$
+        Input "UNESITE ZELJENU TEZINU: ", GAME$
         GAME = UCODE(GAME)
 
     Loop Until GAME$ = "A" Or GAME$ = "B" Or GAME$ = "C"
@@ -40,12 +40,12 @@ Do
     CNT = 0
 
     Do
-        Input "UNESITE VAS ODGOVOR: ", GUESS
+        Input "UNESITE VAS ODGOVOR: ", GUESS
         CNT = CNT + 1
 
-        If GUESS < ANSWER Then Print "VAS ODGOVOR JE NIZI OD BROJA KOJI SAN ZAMISLIO"
-        If GUESS > ANSWER Then Print "VAS ODGOVOR JE VISI NEGO BROJ KOJI SAM ZAMISLIO"
-        If GUESS = ANSWER Then Print "USPJELI STE DA POGODITE MOJ BROJ U "; CNT; "POKUSAJA "
+        If GUESS < ANSWER Then Print "VAS ODGOVOR JE NIZI OD BROJA KOJI SAN ZAMISLIO"
+        If GUESS > ANSWER Then Print "VAS ODGOVOR JE VISI NEGO BROJ KOJI SAM ZAMISLIO"
+        If GUESS = ANSWER Then Print "USPJELI STE DA POGODITE MOJ BROJ U "; CNT; "POKUSAJA "
 
     Loop Until GUESS = ANSWER
 
@@ -53,12 +53,8 @@ Do
     Print
 
     Do
-        Input "ZELITE LI DA IGRATE PONOVO D/N: ", GAME$
+        Input "ZELITE LI DA IGRATE PONOVO D/N: ", GAME$
         GAME = UCASE(GAME)
     Loop Until GAME$ = "D" Or GAME$ = "N"
 
 Loop Until GAME$ = "N"
-
-
-
-
