@@ -6,7 +6,7 @@ Dim GAME As Integer
 Do
     Cls
     Do
-        Print "............................POGODI MOJ BROJ..................................."
+        Print "..............................POGODI MOJ BROJ................................."
         Print "IZABERI TEZINU"
         Print
         Print "A)LAKO"
