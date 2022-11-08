@@ -5,13 +5,13 @@ Dim GAME As Integer
 Do
     Cls
     Do
-        Print "..............................POGODI MOJ BROJ................................."
-        Print "IZABERI TEZINU"
+        Print "..............................GUESS MY NUMBER................................."
+        Print "SELECT DIFFICULTY: "
         Print
-        Print "A)LAKO"
-        Print "B)NORMALNO"
-        Print "C)TESKO"
-        Input "UNESITE ZELJENU TEZINU: ", GAME$
+        Print "A)EASY"
+        Print "B)NORMAL"
+        Print "C)HARD"
+        Input "ENTER THE DIFFICULTY: ", GAME$
         GAME = UCODE(GAME)
     Loop Until GAME$ = "A" Or GAME$ = "B" Or GAME$ = "C"
     Cls
@@ -19,28 +19,28 @@ Do
     Select Case GAME$
         Case "A"
             ANSWER = (Rnd * 9) + 1
-            Print "IGRA OD 1 DO 10"
+            Print "GAME FROM 1 TO 10"
         Case "B"
             ANSWER = (Rnd * 99) + 1
-            Print "IGRA OD 1 DO 100"
+            Print "GAME FROM 1 TO 100"
         Case "C"
             ANSWER = (Rnd * 999) + 1
-            Print "IGRA OD 1 DO 1000"
+            Print "A GAME FROM 1 TO 1000"
     End Select
     GUESS = 0
     CNT = 0
     Do
-        Input "UNESITE VAS ODGOVOR: ", GUESS
+        Input "ENTER YOUR ANSWER: ", GUESS
         CNT = CNT + 1
 
-        If GUESS < ANSWER Then Print "VAS ODGOVOR JE NIZI OD BROJA KOJI SAN ZAMISLIO"
-        If GUESS > ANSWER Then Print "VAS ODGOVOR JE VISI NEGO BROJ KOJI SAM ZAMISLIO"
-        If GUESS = ANSWER Then Print "USPJELI STE DA POGODITE MOJ BROJ U "; CNT; "POKUSAJA "
+        If GUESS < ANSWER Then Print "YOUR ANSWER IS LOWER THAN THE NUMBER I IMAGINED"
+        If GUESS > ANSWER Then Print "YOUR ANSWER IS HIGHER THAN THE NUMBER I IMAGINED"
+        If GUESS = ANSWER Then Print "YOU SUCCEEDED IN GUESSING MY NUMBER IN "; CNT; " ATTEMPTS"
     Loop Until GUESS = ANSWER
     Print
     Do
-        Input "ZELITE LI DA IGRATE PONOVO D/N: ", GAME$
+        Input "DO YOU WANT TO PLAY AGAIN Y/N: ", GAME$
         GAME = UCASE(GAME)
-    Loop Until GAME$ = "D" Or GAME$ = "N"
+    Loop Until GAME$ = "Y" Or GAME$ = "N"
 Loop Until GAME$ = "N"
-END
+End
