@@ -38,7 +38,6 @@ Do
         If GUESS = ANSWER Then Print "YOU SUCCEEDED IN GUESSING MY NUMBER IN "; CNT; " ATTEMPTS"
     Loop Until GUESS = ANSWER
     Print
-    Print
     Do
         Input "DO YOU WANT TO PLAY AGAIN Y/N: ", GAME$
         GAME = UCASE(GAME)
