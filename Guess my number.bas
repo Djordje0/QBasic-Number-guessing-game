@@ -43,4 +43,5 @@ Do
         GAME = UCASE(GAME)
     Loop Until GAME$ = "Y" Or GAME$ = "N"
 Loop Until GAME$ = "N"
-End
+CLS
+END
