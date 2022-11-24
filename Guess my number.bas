@@ -3,7 +3,6 @@ Dim GUESS As Integer
 Dim CNT As Integer
 Dim GAME As Integer
 Do
-    CLS
     Do
         Print "..............................GUESS MY NUMBER................................."
         Print "SELECT DIFFICULTY: "
