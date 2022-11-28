@@ -3,6 +3,7 @@ Dim GUESS As Integer
 Dim CNT As Integer
 Dim GAME As Integer
 Do
+    CLS
     Do
         Print "..............................GUESS MY NUMBER................................."
         Print "SELECT DIFFICULTY: "
@@ -31,15 +32,16 @@ Do
     Do
         Input "ENTER YOUR ANSWER: ", GUESS
         CNT = CNT + 1
-
         If GUESS < ANSWER Then Print "YOUR ANSWER IS LOWER THAN THE NUMBER I IMAGINED"
         If GUESS > ANSWER Then Print "YOUR ANSWER IS HIGHER THAN THE NUMBER I IMAGINED"
         If GUESS = ANSWER Then Print "YOU SUCCEEDED IN GUESSING MY NUMBER IN "; CNT; " ATTEMPTS"
     Loop Until GUESS = ANSWER
+    Print
     Print
     Do
         Input "DO YOU WANT TO PLAY AGAIN Y/N: ", GAME$
         GAME = UCASE(GAME)
     Loop Until GAME$ = "Y" Or GAME$ = "N"
 Loop Until GAME$ = "N"
+CLS
 END
