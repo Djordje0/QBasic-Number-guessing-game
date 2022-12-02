@@ -3,7 +3,6 @@ Dim GUESS As Integer
 Dim CNT As Integer
 Dim GAME As Integer
 Do
-    Cls
     Do
         Print "..............................GUESS MY NUMBER................................."
         Print "SELECT DIFFICULTY: "
@@ -37,11 +36,9 @@ Do
         If GUESS = ANSWER Then Print "YOU SUCCEEDED IN GUESSING MY NUMBER IN "; CNT; " ATTEMPTS"
     Loop Until GUESS = ANSWER
     Print
-    Print
     Do
         Input "DO YOU WANT TO PLAY AGAIN Y/N: ", GAME$
         GAME = UCASE(GAME)
     Loop Until GAME$ = "Y" Or GAME$ = "N"
 Loop Until GAME$ = "N"
-Cls
 END
