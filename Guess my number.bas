@@ -41,5 +41,8 @@ Do
         Input "DO YOU WANT TO PLAY AGAIN Y/N: ", GAME$
         GAME = UCASE(GAME)
     Loop Until GAME$ = "Y" Or GAME$ = "N"
+    If GAME$ = "Y" Then
+        Cls
+    End If
 Loop Until GAME$ = "N"
 End
