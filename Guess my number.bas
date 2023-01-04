@@ -2,6 +2,7 @@ Dim ANSWER As Integer
 Dim GUESS As Integer
 Dim CNT As Integer
 Dim GAME As Integer
+Cls
 Do
     Do
         Print "..............................GUESS MY NUMBER................................."
