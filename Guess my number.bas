@@ -3,6 +3,7 @@ Dim ANSWER As Integer
 Dim GUESS As Integer
 Dim CNT As Integer
 Dim GAME As Integer
+Cls
 Do
     Do
         Print "..............................GUESS MY NUMBER................................."
@@ -45,4 +46,5 @@ Do
         Cls
     End If
 Loop Until GAME$ = "N"
+Cls
 End
