@@ -9,6 +9,7 @@ Do
         Print "..............................GUESS MY NUMBER................................."
         Print "SELECT DIFFICULTY: "
         Print
+        Print
         Print "A)EASY"
         Print "B)NORMAL"
         Print "C)HARD"
