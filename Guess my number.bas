@@ -14,6 +14,7 @@ Do
         Print "B)NORMAL"
         Print "C)HARD"
         Input "ENTER THE DIFFICULTY: ", GAME$
+        GAME$ = UCase$(GAME$) 
         GAME = UCODE(GAME)
     Loop Until GAME$ = "A" Or GAME$ = "B" Or GAME$ = "C"
     Cls
