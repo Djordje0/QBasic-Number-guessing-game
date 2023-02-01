@@ -42,6 +42,7 @@ Do
     Print
     Do
         Input "DO YOU WANT TO PLAY AGAIN Y/N: ", GAME$
+        GAME$ = UCase$(GAME$)
         GAME = UCASE(GAME)
     Loop Until GAME$ = "Y" Or GAME$ = "N"
     If GAME$ = "Y" Then
