@@ -1,3 +1,4 @@
+Rem
 Cls
 Dim ANSWER As Integer
 Dim GUESS As Integer
