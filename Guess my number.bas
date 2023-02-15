@@ -1,5 +1,3 @@
-REM
-Cls
 Dim ANSWER As Integer
 Dim GUESS As Integer
 Dim CNT As Integer
