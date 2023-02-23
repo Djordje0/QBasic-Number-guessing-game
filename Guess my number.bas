@@ -51,3 +51,4 @@ Do
 Loop Until GAME$ = "N"
 Cls
 End
+Cls
