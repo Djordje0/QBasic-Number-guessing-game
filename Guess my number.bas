@@ -48,3 +48,5 @@ Do
         Cls
     End If
 Loop Until GAME$ = "N"
+Cls
+End
