@@ -1,4 +1,3 @@
-Cls
 Dim ANSWER As Integer
 Dim GUESS As Integer
 Dim CNT As Integer
@@ -49,5 +48,3 @@ Do
         Cls
     End If
 Loop Until GAME$ = "N"
-Cls
-End
